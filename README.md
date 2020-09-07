@@ -8,7 +8,9 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 
    ![operators.png](images/operators.png)
 
-4. (Optional) Click on the ![plus.png](images/plus.png) sign in the top right hand corner and paste the code from ![cs.yaml](code/cs.yaml) in the yaml editor and click `Create`. Repeat this step with ![cp.yaml](code/cp.yaml)
+4. (Optional) Click on the ![plus.png](images/plus.png) sign in the top right hand corner and paste the code from ![cs.yaml](code/cs.yaml) in the yaml editor and click `Create`. Repeat with ![cp.yaml](code/cp.yaml). Within a few minutes there should be two new pods in the `openmshift-marketplace` project.
+
+   ![operator-pods.png](images/operator-pods.png)
 
 
 
