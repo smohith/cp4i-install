@@ -15,8 +15,11 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 ### Install the CP4I Operators
 You can install all of the CP4I operators at once by using the Cloud Pak for Integration operator, or install a subset of operators by selecting and installing only the operators you want to use on your cluster. When installing an operator, OLM will automatically install any required dependencies.
 
-5. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 above and then click on the `IBM Cloud Pak for Integration` tile.
+5. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 above and select the `IBM Cloud Pak for Integration` tile.
+
+   ![cp4i-operator-tile.png](images/cp4i-operator-tile.png)
+   
+6. Read the description of the CP4I operator and click `Install`
 
    ![cp4i-operator.png](images/cp4i-operator.png)
-
 
