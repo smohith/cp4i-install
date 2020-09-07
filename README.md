@@ -8,5 +8,5 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 
    ![operators.png](images/operators.png)
 
-4. (Optional) Click on the (images/plus.png) sign in the top right hand corner and paste 
+4. (Optional) Click on the !(images/plus.png) sign in the top right hand corner and paste 
 
