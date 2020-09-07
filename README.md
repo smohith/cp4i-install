@@ -4,9 +4,9 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 ### OLM Catalog Sources
 1. From your web browser use the bookmark tab to open the OpenShift console.
 2. The login credentials should already be saved in the browser. If not use `ibmuser` as Username and `engageibm` as Password.
-3. From the left hand menu expand `Operators > OperatorHub` and search for `cloud pak`.
+3. From the left hand menu expand `Operators > OperatorHub` and search for `cloud pak`. If yhe result is similar to the screenshot below skip Step 4 below.
 
    ![operators.png](images/operators.png)
 
-If 
+4. (Optional) Click on the (images/plus.png) sign in the top right hand corner and paste 
 
