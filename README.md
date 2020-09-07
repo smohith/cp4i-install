@@ -22,4 +22,8 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
 6. Read the description of the CP4I operator and click `Install`
 
    ![cp4i-operator.png](images/cp4i-operator.png)
+   
+7. Leave the defaults to install the operator at the cluster level. Click on `Subscribe`
+
+
 
