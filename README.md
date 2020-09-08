@@ -36,9 +36,9 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured `cp4i` nam
 
 1. Verify that you can successfully login to the `IBM Entitled Docker Registry` using the pre-defined `entitlement key`. Launch a `Terminal` from the desktop. Issue the following commands:
 
-```sh
-oc login -u ibmadmin -p engageibm
-oc project cp4i
-docker login cp.icr.io -u cp -p ibm-entitlement-key
-```
+   ```sh
+   oc login -u ibmadmin -p engageibm
+   oc project cp4i
+   docker login cp.icr.io -u cp -p ibm-entitlement-key
+   ```
 
