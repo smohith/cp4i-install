@@ -34,7 +34,7 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
 ### Create an instance of the Platform Navigator
 We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
 
-1. From the OpenShift console, navigate to `Operators > Installed Operators`. Use the dropdown menu to select the `cp4i` project and select `IBM Cloud Pak for Integration Platform Navigator`.
+1. From the OpenShift console, navigate to `Operators > Installed Operators`. Use the dropdown menu to select the `cp4i` project and select `IBM Cloud Pak for Integration Platform Navigator` from the list of installed operators.
 
    ![cp4i-pn-operator.png](images/cp4i-pn-operator.png)
 
