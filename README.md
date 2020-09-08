@@ -27,6 +27,18 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
 
    ![cp4i-operator-subscribe.png](images/cp4i-operator-subscribe.png)
 
-   The OLM will now go out and pull all the operators included in CP4I and their dependencies from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with a status of `Succeeded`:
+   The OLM will now go out and pull all the operators included in CP4I and their dependencies from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with `Succeeded` as status:
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
+   
+### Create an instance of the Platform Navigator
+We will deploy the Platform Navigator (PN) inside of a pre-configured `cp4i` namespace. We will use an online installation method to pull the necessary images from the image registry using a pre-defined entitlement key.
+
+1. Verify that you can successfully login to the `IBM Entitled Docker Registry` using the pre-defined `entitlement key`. Launch a `Terminal` from the desktop. Issue the following commands:
+
+```sh
+oc login -u ibmadmin -p engageibm
+oc project cp4i
+docker login cp.icr.io -u cp -p ibm-entitlement-key
+```
+
