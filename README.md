@@ -41,6 +41,12 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 2. From the `Details` tab click on `Create Instance`.
 
    ![cp4i-pn-create.png](images/cp4i-pn-create.png)
+   
+3. Verify that the namespace is `cp4i` and change the accept field to `true` within the yaml editor. Click `Create`
+
+   ![cp4i-pn-yaml.png](images/cp4i-pn-yaml.png)
+
+
 
 
 
