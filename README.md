@@ -32,13 +32,13 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
    
 ### Create an instance of the Platform Navigator
-We will deploy the Platform Navigator (PN) inside of a pre-configured `cp4i` namespace. We will use an online installation method to pull the necessary images from the image registry using a pre-defined entitlement key.
+We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
 
-1. Verify that you can successfully login to the `IBM Entitled Docker Registry` using the pre-defined `entitlement key`. Launch a `Terminal` from the desktop. Issue the following commands:
+1. From the OpenShift console, navigate to `Operators > Installed Operators`. Use the dropdown menu to select the `cp4i` project and select `IBM Cloud Pak for Integration Platform Navigator`.
 
-   ```sh
-   oc login -u ibmadmin -p engageibm
-   oc project cp4i
-   docker login cp.icr.io -u cp -p ibm-entitlement-key
-   ```
+2. From the `Details` tab click on `Create Instance`.
+
+   ![cp4i-pn-create.png](images/cp4i-pn-create.png)
+
+
 
