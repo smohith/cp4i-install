@@ -45,6 +45,10 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 3. Verify that the namespace is `cp4i` and change the accept field to `true` within the yaml editor. Click `Create`
 
    ![cp4i-pn-yaml.png](images/cp4i-pn-yaml.png)
+   
+4. The deployment may take several minutes as the required images are downloaded from the image registry and any dependent services are deployed. If everything goes well the `Status` will change to `Ready` as shown below:
+
+   ![cp4i-pn-ready.png](images/cp4i-pn-ready.png)
 
 
 
