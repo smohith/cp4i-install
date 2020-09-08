@@ -36,6 +36,8 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 
 1. From the OpenShift console, navigate to `Operators > Installed Operators`. Use the dropdown menu to select the `cp4i` project and select `IBM Cloud Pak for Integration Platform Navigator`.
 
+   ![cp4i-pn-operator.png](images/cp4i-pn-operator.png)
+
 2. From the `Details` tab click on `Create Instance`.
 
    ![cp4i-pn-create.png](images/cp4i-pn-create.png)
