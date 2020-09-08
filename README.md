@@ -27,6 +27,6 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
 
    ![cp4i-operator-subscribe.png](images/cp4i-operator-subscribe.png)
 
-   The OLM will now go out and pull all the operators included in CP4I and their dependencies from the online catalog and install them. This could take several minutes. When complete the result should look something like:
+   The OLM will now go out and pull all the operators included in CP4I and their dependencies from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with a status of `Succeeded`:
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
