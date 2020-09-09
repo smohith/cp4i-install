@@ -57,6 +57,16 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 6. To open up the PN click on its URL under `Platform Navigator UI`:
 
    ![cp4i-pn-url.png](images/cp4i-pn-url.png)
+   
+7. The password for the `admin` user is stored in a secret called `platform-auth-idp-credentials` in the `ibm-common-services` namespace. To decode its value open a Terminal from the desktop and type the following command:
+
+   ```sh
+   oc get secrets -n ibm-common-services platform-auth-idp-credentials -o jsonpath='{.data.admin_password}' | base64 --decode && echo ""
+   ```
+   If you are prompted for a login and password after entering the above `oc` command use `ibmadmin` and `engageibm`.
+   
+
+
 
 
 
