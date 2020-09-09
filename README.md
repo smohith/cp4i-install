@@ -52,6 +52,10 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
    
 5. Once deployed, you can find the PN endpoint by clicking on its `Name` as shown below: 
 
+   ![cp4i-pn-name.png](images/cp4i-pn-name.png)
+   
+6. To open up the PN click on its URL under `Platform Navigator UI`:
+
    ![cp4i-pn-url.png](images/cp4i-pn-url.png)
 
 
