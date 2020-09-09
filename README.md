@@ -69,7 +69,10 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
    
       ![cp4i-pn-ui.png](images/cp4i-pn-ui.png)
 
-### Deploy Platform Capabilities
+### Deploy Platform Capabilities and Runtimes
+You will use the PN to deploy further integration capabilities. Capabilities provide tools for designing and managing integration instances like App Connect Dasboard, App Connect Designer, API Connect, Operations Dashboard or Asset Repository. Runtimes and instances are the runtime components of your integration solution like Aspera High speed transfer server, DataPower Gateway, Event Streams Kafka cluster or MQ Queue manager.
+
+
 
 
 
