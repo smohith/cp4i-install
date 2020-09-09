@@ -72,21 +72,21 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 ### Deploy Platform Capabilities and Runtimes
 You will now use the PN to deploy further integration capabilities. Capabilities provide tools for designing and managing integration instances like App Connect Dasboard, App Connect Designer, API Connect, Operations Dashboard or Asset Repository. Runtimes and instances are the runtime components of your integration solution like Aspera High speed transfer server, DataPower Gateway, Event Streams Kafka cluster or MQ Queue manager.
 
-#### 1. App Connect Designer
+#### App Connect Designer
 
-   a. From the Platform Navigator UI home screen, click on `Create capability`
-
+   1. From the Platform Navigator UI home screen, click on `Create capability`.
+      
       ![cp4i-pn-capability-create.png](images/cp4i-pn-capability-create.png)
       
-   b. Select the `App Connect Designer` tile and click `Next`
+   2. Select the `App Connect Designer` tile and click `Next`.
 
       ![cp4i-pn-capability-create-des.png](images/cp4i-pn-capability-des.png)
       
-   c. From the list of options, select `Quick start` and click `Next`
+   3. From the list of options, select `Quick start` and click `Next`.
 
       ![cp4i-pn-capability-create-des-qs.png](images/cp4i-pn-capability-des-qs.png)
       
-   d. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones:
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones:
 
       | Field  | Value  |
       | :----: | :----: |
