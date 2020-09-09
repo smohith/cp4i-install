@@ -74,23 +74,23 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
 #### 1. App Connect Designer
 
-a. From the Platform Navigator UI home screen, click on `Create capability`
+   a. From the Platform Navigator UI home screen, click on `Create capability`
 
       ![cp4i-pn-capability-create.png](images/cp4i-pn-capability-create.png)
       
-b. Select the `App Connect Designer` tile and click `Next`
+   b. Select the `App Connect Designer` tile and click `Next`
 
       ![cp4i-pn-capability-create-des.png](images/cp4i-pn-capability-des.png)
       
-c. From the list of options, select `Quick start` and click `Next`
+   c. From the list of options, select `Quick start` and click `Next`
 
       ![cp4i-pn-capability-create-des-qs.png](images/cp4i-pn-capability-des-qs.png)
       
-d. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones:
+   d. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones:
 
-      | Field | Value |
-      | ------ | ------ |
-      | Name | des-quickstart |
+      | Field  | Value  |
+      | :----: | :----: |
+      | Name   | des-quickstart |
 
       
 
