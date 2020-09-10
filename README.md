@@ -288,6 +288,6 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
       ![cp4i-pn-capability-create-apic-config.png](images/cp4i-pn-capability-create-apic-config.png)
       
-      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+      After several minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
    
       ![cp4i-pn-capability-create-apic-ready.png](images/cp4i-pn-capability-create-apic-ready.png)
