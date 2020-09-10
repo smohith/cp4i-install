@@ -217,7 +217,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
    6. In order to resolve this problem go back to Platform Navigator UI and click on the deployed `od` capability. 
    
-      ![cp4i-pn-runtime-create-qm-od.png](images/cp4i-pn-runtime-create-qm-od.png)
+      ![cp4i-pn-capability-od.png](images/cp4i-pn-capability-od.png)
       
    7. From there navigate to `Manage > Registration requests` and click on `Approve`
    
