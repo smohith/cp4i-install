@@ -185,7 +185,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
 #### Queue Manager
 
-   1. From the Platform Navigator UI home screen, click on `Runtimes` tab and then `Create instance`.
+   1. From the Platform Navigator UI home screen, click on the `Runtimes` tab and then `Create instance`.
       
       ![cp4i-pn-runtime-create.png](images/cp4i-pn-runtime-create.png)
       
@@ -268,6 +268,26 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
 #### API Connect
 
+   1. From the Platform Navigator UI home screen, click on the `Capabilities` tab and then `Create capability`.
+      
+   2. Select the `API Connect` tile and click `Next`.
 
+      ![cp4i-pn-capability-create-apic.png](images/cp4i-pn-capability-create-apic.png)
+      
+   3. From the list of options, select `One Node - Minimum` and click `Next`.
 
+      ![cp4i-pn-capability-create-apic-min.png](images/cp4i-pn-capability-create-apic-min.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
 
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Name                                      |            apic-min |
+      | Namespace                                 |                apic | 
+      | License acceptance                        |                  On |
+
+      ![cp4i-pn-capability-create-apic-config.png](images/cp4i-pn-capability-create-apic-config.png)
+      
+      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+   
+      ![cp4i-pn-capability-create-apic-ready.png](images/cp4i-pn-capability-create-apic-ready.png)
