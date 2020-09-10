@@ -205,7 +205,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | Namespace                                 |                   mq |
       | License acceptance                        |                   On |
       | License metric (optional)                 | VirtualProcessorCore |
-      | Type of availability                      |       SingleInstance |
+      | Type of availability (optional)           |       SingleInstance |
       | Enable Tracing                            |                   On |
       | Tracing Namespace                         |              tracing |
  
@@ -223,7 +223,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-runtime-create-qm-od-approve.png](images/cp4i-pn-runtime-create-qm-od-approve.png)
       
-   8. Within the new `Request approval` pop-up click on `Copy to clipboard` icon
+   8. Within the new `Request approval` pop-up click on the `Copy to clipboard` icon
    
       ![cp4i-pn-runtime-create-qm-od-approve-cmds.png](images/cp4i-pn-runtime-create-qm-od-approve-cmds.png)
       
@@ -239,7 +239,41 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
 #### Event Streams
 
+   1. From the Platform Navigator UI home screen, click on `Create instance` just like in the previous section.
+      
+   2. Select the `Kafka cluster` tile and click `Next`.
 
+      ![cp4i-pn-runtime-create-es.png](images/cp4i-pn-runtime-create-es.png)
+      
+   3. From the list of options, select `Lightweight without security` and click `Next`.
+
+      ![cp4i-pn-runtime-create-es-lite.png](images/cp4i-pn-runtime-create-es-lite.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
+
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Name                                      |             es-lite |
+      | Namespace                                 |        eventstreams | 
+      | License accept                            |                  On |
+
+      ![cp4i-pn-runtime-create-es-config.png](images/cp4i-pn-runtime-create-es-config.png)
+      
+   5. If you see get the following warning message, you can safely ignore it. This is because we have deployed the instance with no security
+   
+      ![cp4i-pn-runtime-create-es-warning.png](images/cp4i-pn-runtime-create-es-warning.png)
+   
+   6. If you notice the deployed Event Streams instance remains in the `Pending` state indefinitely switch to the OpenShift console and check the pods within the `eventstreams` namespace. If everything started successfully you should see something like:
+      
+      ![cp4i-pn-runtime-create-es-pods.png](images/cp4i-pn-runtime-create-es-pods.png)
+      
+   7. You can then go back to the Platform Navigator UI and click on the `Refresh` icon. The `Warning` state is just the result of security being disabled.
+   
+      ![cp4i-pn-runtime-refresh.png](images/cp4i-pn-runtime-refresh.png)
+      
+      ![cp4i-pn-capability-create-repo-ready.png](images/cp4i-pn-capability-create-repo-ready.png)
+
+#### API Connect
 
 
 
