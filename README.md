@@ -259,15 +259,15 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
       ![cp4i-pn-runtime-create-es-config.png](images/cp4i-pn-runtime-create-es-config.png)
       
-   5. If you see get the following warning message, you can safely ignore it. This is because we have deployed the instance with no security
+   5. If you get the following warning message, you can safely ignore it. This is because we have deployed the instance with no persistent storage.
    
       ![cp4i-pn-runtime-create-es-warning.png](images/cp4i-pn-runtime-create-es-warning.png)
    
-   6. If you notice the deployed Event Streams instance remains in the `Pending` state indefinitely switch to the OpenShift console and check the pods within the `eventstreams` namespace. If everything started successfully you should see something like:
+   6. If you notice the deployed Event Streams instance remains in the `Pending` state indefinitely switch to the OpenShift console and check the pods within the `eventstreams` namespace. If everything started successfully you should see something like this:
       
       ![cp4i-pn-runtime-create-es-pods.png](images/cp4i-pn-runtime-create-es-pods.png)
       
-   7. You can then go back to the Platform Navigator UI and click on the `Refresh` icon. The `Warning` state is just the result of security being disabled.
+   7. You can then go back to the Platform Navigator UI and click on the `Refresh` icon. The `Warning` state is just the result of security being disabled and using ephemeral storage.
    
       ![cp4i-pn-runtime-refresh.png](images/cp4i-pn-runtime-refresh.png)
       
