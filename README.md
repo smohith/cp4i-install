@@ -271,7 +271,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-runtime-refresh.png](images/cp4i-pn-runtime-refresh.png)
       
-      ![cp4i-pn-capability-create-repo-ready.png](images/cp4i-pn-capability-create-repo-ready.png)
+      ![cp4i-pn-runtime-create-es-ready.png](images/cp4i-pn-runtime-create-es-ready.png)
 
 #### API Connect
 
