@@ -245,31 +245,24 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
       ![cp4i-pn-runtime-create-es.png](images/cp4i-pn-runtime-create-es.png)
       
-   3. From the list of options, select `Lightweight without security` and click `Next`.
+   3. From the list of options, select `Development` and click `Next`.
 
-      ![cp4i-pn-runtime-create-es-lite.png](images/cp4i-pn-runtime-create-es-lite.png)
+      ![cp4i-pn-runtime-create-es-dev.png](images/cp4i-pn-runtime-create-es-dev.png)
       
    4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
 
-      | Field                                     |               Value |
-      | :---                                      |                ---: |
-      | Name                                      |             es-lite |
-      | Namespace                                 |        eventstreams | 
-      | License accept                            |                  On |
+      | Field                                     |                                                Value |
+      | :---                                      |                                                 ---: |
+      | Name                                      |                                               es-dev |
+      | Namespace                                 |                                         eventstreams | 
+      | License accept                            |                                                   On |
+      | Storage type                              |                                     persistent-claim |
+      | Storage size (optional)                   | 10Gi (Kafka and Zookeeper) and 2Gi (Schema Registry) |
+      | Storage class (optional)                  |                                  managed-nfs-storage |
 
       ![cp4i-pn-runtime-create-es-config.png](images/cp4i-pn-runtime-create-es-config.png)
       
-   5. If you get the following warning message, you can safely ignore it. This is because we have deployed the instance with no persistent storage.
-   
-      ![cp4i-pn-runtime-create-es-warning.png](images/cp4i-pn-runtime-create-es-warning.png)
-   
-   6. If you notice the deployed Event Streams instance remains in the `Pending` state indefinitely switch to the OpenShift console and check the pods within the `eventstreams` namespace. If everything started successfully you should see something like this:
-      
-      ![cp4i-pn-runtime-create-es-pods.png](images/cp4i-pn-runtime-create-es-pods.png)
-      
-   7. You can then go back to the Platform Navigator UI and click on the `Refresh` icon. The `Warning` state is just the result of security being disabled and using ephemeral storage.
-   
-      ![cp4i-pn-runtime-refresh.png](images/cp4i-pn-runtime-refresh.png)
+   7. After a few minutes the runtime should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
       
       ![cp4i-pn-runtime-create-es-ready.png](images/cp4i-pn-runtime-create-es-ready.png)
 
