@@ -155,7 +155,33 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-capability-create-od-ready.png](images/cp4i-pn-capability-create-od-ready.png)
 
+#### Asset Repository
 
+   1. From the Platform Navigator UI home screen, click on `Create capability` just like in the previous section.
+      
+   2. Select the `Asset Repository` tile and click `Next`.
+
+      ![cp4i-pn-capability-create-repo.png](images/cp4i-pn-capability-create-repo.png)
+      
+   3. From the list of options, select `Development` and click `Next`.
+
+      ![cp4i-pn-capability-create-repo-dev.png](images/cp4i-pn-capability-create-repo-dev.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
+
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Name                                      |       assetrepo-dev |
+      | Namespace                                 |           assetrepo | 
+      | License agreement                         |                  On |
+      | Asset data storage class                  | managed-nfs-storage |
+      | Asset metadata storage class              | managed-nfs-storage |
+
+      ![cp4i-pn-capability-create-repo-config.png](images/cp4i-pn-capability-create-repo-config.png)
+      
+      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+   
+      ![cp4i-pn-capability-create-repo-ready.png](images/cp4i-pn-capability-create-repo-ready.png)
 
 
 
