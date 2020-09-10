@@ -183,8 +183,61 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-capability-create-repo-ready.png](images/cp4i-pn-capability-create-repo-ready.png)
 
+#### Queue Manager
 
+   1. From the Platform Navigator UI home screen, click on `Runtimes` tab and then `Create instance`.
+      
+      ![cp4i-pn-runtime-create.png](images/cp4i-pn-runtime-create.png)
+      
+   2. Select the `Queue manager` tile and click `Next`.
 
+      ![cp4i-pn-runtime-create-qm.png](images/cp4i-pn-runtime-create-qm.png)
+      
+   3. From the list of options, select `Quick start` and click `Next`.
+
+      ![cp4i-pn-runtime-create-qm-qs.png](images/cp4i-pn-runtime-create-qm-qs.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
+
+      | Field                                     |                Value |
+      | :---                                      |                 ---: |
+      | Name                                      |        qm-quickstart |
+      | Namespace                                 |                   mq |
+      | License acceptance                        |                   On |
+      | License metric (optional)                 | VirtualProcessorCore |
+      | Type of availability                      |       SingleInstance |
+      | Enable Tracing                            |                   On |
+      | Tracing Namespace                         |              tracing |
+ 
+      ![cp4i-pn-runtime-create-qm-config.png](images/cp4i-pn-runtime-create-qm-config.png)
+      
+   5. Since we've enabled tracing on the QM instance, the runtime will remain in `Pending` state until we approve the registration request in the `Operations Dashboard`. Switch to the OpenShift console, navigate to `Workloads > Pods` and select `Project: mq`. You will notice the QM pod in a `CreateContainerConfigError` state.
+      
+      ![cp4i-pn-runtime-create-qm-pod-err.png](images/cp4i-pn-runtime-create-qm-pod-err.png)
+      
+   6. In order to resolve this problem go back to Platform Navigator UI and click on the deployed `od` capability. 
+   
+      ![cp4i-pn-runtime-create-qm-od.png](images/cp4i-pn-runtime-create-qm-od.png)
+      
+   7. From there navigate to `Manage > Registration requests` and click on `Approve`
+   
+      ![cp4i-pn-runtime-create-qm-od-approve.png](images/cp4i-pn-runtime-create-qm-od-approve.png)
+      
+   8. Within the new `Request approval` pop-up click on `Copy to clipboard` icon
+   
+      ![cp4i-pn-runtime-create-qm-od-approve-cmds.png](images/cp4i-pn-runtime-create-qm-od-approve-cmds.png)
+      
+   9. Switch back to your `Terminal` and paste the commands you copied from above
+   
+      ![cp4i-pn-runtime-create-qm-od-approve-cmds-run.png](images/cp4i-pn-runtime-create-qm-od-approve-cmds-run.png)
+   
+   10. The QM pod should now be in `Running` state and the runtime `Ready`
+   
+       ![cp4i-pn-runtime-create-qm-pod-ok.png](images/cp4i-pn-runtime-create-qm-pod-ok.png)  
+   
+       ![cp4i-pn-runtime-create-qm-ready.png](images/cp4i-pn-runtime-create-qm-ready.png)
+
+#### Event Streams
 
 
 
