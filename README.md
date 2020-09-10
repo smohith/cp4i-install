@@ -128,6 +128,37 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-capability-create-db-ready.png](images/cp4i-pn-capability-create-db-ready.png)
 
+#### Operations Dashboard
+
+   1. From the Platform Navigator UI home screen, click on `Create capability` just like in the previous section.
+      
+   2. Select the `Operations Dashboard` tile and click `Next`.
+
+      ![cp4i-pn-capability-create-od.png](images/cp4i-pn-capability-create-od.png)
+      
+   3. From the list of options, select `example-operationsdashboard` and click `Next`.
+
+      ![cp4i-pn-capability-create-od-ex.png](images/cp4i-pn-capability-create-od-ex.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
+
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Name                                      |                  od |
+      | Namespace                                 |             tracing | 
+      | Config DB storage class name              | managed-nfs-storage |
+      | Store storage class name                  | managed-nfs-storage |
+
+      ![cp4i-pn-capability-create-od-config.png](images/cp4i-pn-capability-create-od-config.png)
+      
+      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+   
+      ![cp4i-pn-capability-create-od-ready.png](images/cp4i-pn-capability-create-od-ready.png)
+
+
+
+
+
 
 
 
