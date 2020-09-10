@@ -88,21 +88,48 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
    4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
 
-      | Field  | Value  |
-      | :----: | :----: |
-      | Namespace   | ace |
-      | Storage class (optional) | managed-nfs-storage |
-      | Size | 10 |
-      | Enable Designer Mapping Assist (optional) | On |
-      | Accept Terms and Conditions | On | 
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Namespace                                 |                 ace |
+      | Storage class (optional)                  | managed-nfs-storage |
+      | Size                                      |                  10 |
+      | Enable Designer Mapping Assist (optional) |                  On |
+      | Accept Terms and Conditions               |                  On | 
 
       ![cp4i-pn-capability-create-des-config.png](images/cp4i-pn-capability-create-des-config.png)
       
-   5. After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
    
       ![cp4i-pn-capability-create-des-ready.png](images/cp4i-pn-capability-create-des-ready.png)
       
 #### App Connect Dashboard
+
+   1. From the Platform Navigator UI home screen, click on `Create capability` just like in the previous section.
+      
+   2. Select the `App Connect Dashboard` tile and click `Next`.
+
+      ![cp4i-pn-capability-create-des.png](images/cp4i-pn-capability-create-des.png)
+      
+   3. From the list of options, select `Quick start` and click `Next`.
+
+      ![cp4i-pn-capability-create-des-qs.png](images/cp4i-pn-capability-create-des-qs.png)
+      
+   4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
+
+      | Field                                     |               Value |
+      | :---                                      |                ---: |
+      | Namespace                                 |                 ace |
+      | Storage class (optional)                  | managed-nfs-storage |
+      | Size                                      |                  10 |
+      | Enable Designer Mapping Assist (optional) |                  On |
+      | Accept Terms and Conditions               |                  On | 
+
+      ![cp4i-pn-capability-create-des-config.png](images/cp4i-pn-capability-create-des-config.png)
+      
+      After a few minutes the capability should be deployed and be ready to use. If not check the logs and events within the OpenShift console or use the `oc describe` and `oc logs` commands on the failing pods within the given namespace.
+   
+      ![cp4i-pn-capability-create-des-ready.png](images/cp4i-pn-capability-create-des-ready.png)
+
 
 
 
