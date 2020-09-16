@@ -236,7 +236,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    
       ![cp4i-pn-runtime-create-qm-od-approve-cmds-run.png](images/cp4i-pn-runtime-create-qm-od-approve-cmds-run.png)
    
-   10. The QM pod should now be in `Running` state and the runtime `Ready`
+   10. After a few minutes, the QM pod will be in `Running` state and the runtime `Ready`
    
        ![cp4i-pn-runtime-create-qm-pod-ok.png](images/cp4i-pn-runtime-create-qm-pod-ok.png)  
    
