@@ -312,11 +312,11 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
    ![cp4i-operator-redis-deploy.png](images/cp4i-operator-redis-deploy.png)
 
-4. In the YAML editor scroll down to the `resources` section to update the `memory requests and limits` to `256Mi`. Click `Save`.
+4. In the YAML editor scroll down to the `resources` section to update the `memory` requests and limits to `256Mi`. Click `Save`.
 
    ![cp4i-operator-redis-yaml.png](images/cp4i-operator-redis-yaml.png)
 
-5. The failing pod will now terminate and a new one iniatialized and the operator installation should eventually change to `Succeeded`.
+5. This will spawn a new pod and the operator installation will eventually change to `Succeeded`.
 
    ![cp4i-operator-redis-success.png](images/cp4i-operator-redis-success.png)
 
