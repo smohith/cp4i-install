@@ -36,7 +36,7 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
    
-   <ins>Warning</ins> If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to Step 1 in the Appendix.  
+   <ins>Warning</ins> If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to the Appendix.  
    
 ### Create an instance of the Platform Navigator
 We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
@@ -300,8 +300,23 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       ![cp4i-pn-capability-create-apic-ready.png](images/cp4i-pn-capability-create-apic-ready.png)
       
 ### Appendix
-1. The `IBM Operator for Redis` operator may fail to install because of a memory resource constraint. If you see something like the followingin the list of installed operators:
+1. The `IBM Operator for Redis` operator may fail to install because of a memory resource constraint. If you see something like the following in the list of installed operators:
 
-   ![cp4i-operators-redis-failure.png](images/cp4i-operators-redis-failure.png)
+   ![cp4i-operator-redis-failure.png](images/cp4i-operator-redis-failure.png)
    
-2. Navigate to `Workloads > Pods` and select `Project: openshift-operators`.
+2. Navigate to `Workloads > Pods` and select `Project: openshift-operators` from the dropdown. Look for a pod that is crashing with an `OOMKilled` or `CrashLoopBackOff` error.
+
+   ![cp4i-operator-redis-pod.png](images/cp4i-operator-redis-pod.png)
+
+3. Look for the corresponding deployment under `Workloads > Deployments` and use the `Edit Deployment` option to modify it.
+
+   ![cp4i-operator-redis-deploy.png](images/cp4i-operator-redis-deploy.png)
+
+4. In the YAML editor scroll down to the `resources` section to update the `memory requests and limits` to `256Mi`. Click `Save`.
+
+   ![cp4i-operator-redis-yaml.png](images/cp4i-operator-redis-yaml.png)
+
+5. The failing pod will now terminate and a new one iniatialized and the operator installation should eventually change to `Succeeded`.
+
+   ![cp4i-operator-redis-success.png](images/cp4i-operator-redis-success.png)
+
