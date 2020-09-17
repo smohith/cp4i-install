@@ -4,7 +4,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 ### Environment
 - Bluedemos Template: TBD
 - Desktop Login: ibmuser/engageibm
-- OpenShift Credentials: ibmadmin/engageibm [auth:htpasswd]
+- OpenShift Credentials: ibmadmin/engageibm [auth: htpasswd]
 
 ### OLM Catalog Sources
 1. From your web browser use the bookmark tab to open the OpenShift console.
