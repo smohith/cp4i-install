@@ -36,7 +36,7 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
    
-   *Warning*: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you want to fix the problem refer to Step 1 in the Appendix.  
+   <ins>Warning</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you want to fix the problem refer to Step 1 in the Appendix.  
    
 ### Create an instance of the Platform Navigator
 We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
@@ -301,4 +301,4 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
 ### Appendix
 
-1.
+1. If ...
