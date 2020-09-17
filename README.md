@@ -300,8 +300,8 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       ![cp4i-pn-capability-create-apic-ready.png](images/cp4i-pn-capability-create-apic-ready.png)
       
 ### Appendix
+1. The `IBM Operator for Redis` operator may fail to install because of a memory resource constraint. If you see something like the followingin the list of installed operators:
 
-A1. The `IBM Operator for Redis` operator may fail to install because of a memory resource constraint. If you see something like the following 
-
-   ![cp4i-operators-redis.png](images/cp4i-operators-redis.png)
+   ![cp4i-operators-redis-failure.png](images/cp4i-operators-redis-failure.png)
    
+2. Navigate to `Workloads > Pods` and select `Project: openshift-operators`.
