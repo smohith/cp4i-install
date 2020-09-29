@@ -68,7 +68,7 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 
    ![cp4i-pn-name.png](images/cp4i-pn-name.png)
    
-6. To open up the PN click on its URL under `Platform Navigator UI`:
+6. To open the PN click on its URL under `Platform Navigator UI` and choose the `default authentication` method:
 
    ![cp4i-pn-url.png](images/cp4i-pn-url.png)
    
