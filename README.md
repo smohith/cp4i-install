@@ -16,7 +16,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 
 2. The login credentials should already be saved in the browser. If not use `ibmadmin` as Username and `engageibm` as Password (make sure to select the `htpasswd` authentication method).
 
-3. From the left hand menu expand `Operators > OperatorHub` and search for `cloud pak`. If the result is similar to the screenshot below skip Step 4 below and move to the next section.
+3. From the left hand menu expand `Operators > OperatorHub` and search for `ibm cloud pak for integration` within the `Filter by keyword...` search bar. If the result is similar to the screenshot below skip Step 4 below and move to the next section.
 
    ![operators.png](images/operators.png)
 
@@ -25,25 +25,40 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
    ![operator-pods.png](images/operator-pods.png)
 
 ### Install the CP4I Operators and their dependencies
-You can install all of the CP4I operators at once by using the Cloud Pak for Integration operator, or install a subset of operators by selecting and installing only the operators you want to use on your cluster. When installing an operator, OLM will automatically install any required dependencies.
+You can use the quick approach and install all of the CP4I operators at once by using the Cloud Pak for Integration operator, or install only a subset of operators by selecting only the capbilities and runtimes you want in your cluster. We will choose the latter in this lab.
 
-1. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 from the previous section and select the `IBM Cloud Pak for Integration` tile.
+1. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 from the previous section and search for `ibm common service` and click on its tile.
 
-   ![cp4i-operator-tile.png](images/cp4i-operator-tile.png)
+   ![cs-operator-tile.png](images/cs-operator-tile.png)
+
+2. Read the description of the operator and click `Install`.
+
+   ![cs-operator-install.png](images/cs-operator-install.png)
+
+3. Accept all the defaults to install the operator at the cluster level and to approve automatic updates using the latest (stable) update channel. Click `Subscribe`.
+
+   ![cs-operator-subscribe.png](images/cs-operator-subscribe.png)
+
+   The OLM will now go out and pull the operator and its dependencies (if any) from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with `Succeeded` as status:
    
-2. Read the description of the CP4I operator and click `Install`.
+   ![cs-operator-installed.png](images/cs-operator-installed.png)
 
-   ![cp4i-operator.png](images/cp4i-operator.png)
-   
-3. Accept all the defaults to install the operator at the cluster level and to approve automatic updates using the latest stable update channel. Click `Subscribe`.
+4. Repeat steps 1-3 above to install the following operators by searching for the corresponding name in the search bar:
 
-   ![cp4i-operator-subscribe.png](images/cp4i-operator-subscribe.png)
+   - IBM Cloud Pak for Integration Platform Navigator
+   - IBM Cloud Pak for Integration Operations Dashboard
+   - IBM Cloud Pak for Integration Asset Repository
+   - IBM App Connect
+   - IBM MQ
+   - IBM Event Streams
+   - IBM API Connect (this will also install the pre-req IBM DataPower Gateway operator) 
+   - IBM Aspera HSTS
 
-   The OLM will now go out and pull all the operators included in CP4I and their dependencies from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with `Succeeded` as status:
+   <ins>**Warning**</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to `Appendix B`. 
+
+   When complete the result should look something like the following with `Succeeded` as status:
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
-   
-   <ins>**Warning**</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to `Appendix B`.  
    
 ### Create an instance of the Platform Navigator
 We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
