@@ -305,7 +305,9 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
 ### Appendix A
 
-From your desktop open a `Terminal` window and issue the following commands:
+1. From your desktop, double click on the `Terminal` icon to open a command window.
+
+2. Issue the following commands:
 
    ```sh
    [ibmuser@admin ~]$ ssh root@dns
