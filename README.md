@@ -10,7 +10,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 ### OLM Catalog Sources
 1. From your web browser use the ![home.png](images/home.png) icon to open the OpenShift console.
 
-   **Warning**: If you get a `PR_END_OF_FILE_ERROR` error in the browser it is most likely indicative of an OpenShift certificate expiration issue. To fix the problem follow the steps in **Appendix A** below, wait a few minute and then retry the above.
+   <ins>**Warning**</ins>: If you get a `PR_END_OF_FILE_ERROR` error in the browser it is most likely indicative of an OpenShift certificate expiration issue. To fix the problem follow the steps in `Appendix A` below, wait a few minute and then retry the above.
 
 2. The login credentials should already be saved in the browser. If not use `ibmadmin` as Username and `engageibm` as Password (make sure to select the `htpasswd` authentication method).
 
@@ -41,7 +41,7 @@ You can install all of the CP4I operators at once by using the Cloud Pak for Int
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
    
-   <ins>Warning</ins> If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to **Appendix B**.  
+   <ins>**Warning**</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to `Appendix B`.  
    
 ### Create an instance of the Platform Navigator
 We will deploy the Platform Navigator (PN) inside of a pre-configured namespace. We will use an online installation method to pull the necessary images from the `IBM Entitled Registry` using a pre-defined `entitlement key`.
