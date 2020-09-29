@@ -305,6 +305,14 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
 ### Appendix A
 
+1. From your desktop open a `Terminal` window and issue the following commands:
+
+```sh
+$ ssh root@dns
+root@dns's password: passw0rd
+[root@dns ~]#  
+```
+
 ### Appendix B
 
 1. The `IBM Operator for Redis` operator may fail to install because of a memory resource constraint. If you see something like the following in the list of installed operators:
