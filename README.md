@@ -308,8 +308,9 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 1. From your desktop open a `Terminal` window and issue the following commands:
 
    ```sh
-   $ ssh root@dns
+   [ibmuser@admin ~]$ ssh root@dns
    root@dns's password: passw0rd
+   
    [root@dns ~]# oc get nodes
    NAME      STATUS     ROLES           AGE   VERSION
    master1   NotReady   master,worker   96d   v1.17.1+6af3663
@@ -319,12 +320,24 @@ You will now use the PN to deploy further integration capabilities. Capabilities
    worker2   NotReady   worker          96d   v1.17.1+6af3663
    worker3   NotReady   worker          96d   v1.17.1+6af3663
    worker4   NotReady   worker          96d   v1.17.1+6af3663
+   
    [root@dns ~]# oc get csr -o name | xargs oc adm certificate approve
    certificatesigningrequest.certificates.k8s.io/csr-4bt7c approved
    certificatesigningrequest.certificates.k8s.io/csr-4lngv approved
    ...
    certificatesigningrequest.certificates.k8s.io/csr-vwgkf approved
    
+   [root@dns ~]# oc get nodes
+   NAME      STATUS   ROLES           AGE   VERSION
+   master1   Ready    master,worker   96d   v1.17.1+6af3663
+   master2   Ready    master,worker   96d   v1.17.1+6af3663
+   master3   Ready    master,worker   96d   v1.17.1+6af3663
+   worker1   Ready    worker          96d   v1.17.1+6af3663
+   worker2   Ready    worker          96d   v1.17.1+6af3663
+   worker3   Ready    worker          96d   v1.17.1+6af3663
+   worker4   Ready    worker          96d   v1.17.1+6af3663
+   
+   [root@dns ~]# exit
    ```
 
 ### Appendix B
