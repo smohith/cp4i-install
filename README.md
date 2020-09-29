@@ -25,7 +25,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
    ![operator-pods.png](images/operator-pods.png)
 
 ### Install the CP4I Operators and their dependencies
-You can use the quick approach and install all of the CP4I operators at once by using the Cloud Pak for Integration operator, or install only a subset of operators by selecting only the capbilities and runtimes you want in your cluster. We will choose the latter in this lab.
+You can use the quick approach and install all of the CP4I operators at once by using the `IBM Cloud Pak for Integration` operator, or install them one by one by selecting only the capabilities and runtimes you want in your cluster. We will choose the latter approach in this lab.
 
 1. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 from the previous section and search for `ibm common service` and click on its tile.
 
@@ -39,7 +39,7 @@ You can use the quick approach and install all of the CP4I operators at once by 
 
    ![cs-operator-subscribe.png](images/cs-operator-subscribe.png)
 
-   The OLM will now go out and pull the operator and its dependencies (if any) from the online catalog and install them. This could take several minutes. When complete the result should look something like the following with `Succeeded` as status:
+   The OLM will now go out and pull the operator and its dependencies (if any) from the online catalog and install them. When complete the result should look something like the following with `Succeeded` as status:
    
    ![cs-operator-installed.png](images/cs-operator-installed.png)
 
@@ -56,7 +56,7 @@ You can use the quick approach and install all of the CP4I operators at once by 
 
    <ins>**Warning**</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to `Appendix B`. 
 
-   When complete the result should look something like the following with `Succeeded` as status:
+   When complete the result should look something like the following with `Succeeded` as status across all namespaces:
    
    ![cp4i-operators-installed.png](images/cp4i-operators-installed.png)
    
