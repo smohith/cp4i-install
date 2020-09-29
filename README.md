@@ -13,6 +13,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
    <ins>Warning</ins> If you get a `PR_END_OF_FILE_ERROR` error in the browser it is most likely indicative of an OpenShift certificate expiration issue. To fix the problem follow the steps in **Appendix A** below and then come back to this section.
 
 2. The login credentials should already be saved in the browser. If not use `ibmadmin` as Username and `engageibm` as Password (make sure to select the `htpasswd` authentication method).
+
 3. From the left hand menu expand `Operators > OperatorHub` and search for `cloud pak`. If the result is similar to the screenshot below skip Step 4 below and move to the next section.
 
    ![operators.png](images/operators.png)
@@ -21,7 +22,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 
    ![operator-pods.png](images/operator-pods.png)
 
-### Install the CP4I Operators
+### Install the CP4I Operators and their dependencies
 You can install all of the CP4I operators at once by using the Cloud Pak for Integration operator, or install a subset of operators by selecting and installing only the operators you want to use on your cluster. When installing an operator, OLM will automatically install any required dependencies.
 
 1. If you are not within the `OperatorHub` menu of the OpenShift console follow the instructions in Step 3 from the previous section and select the `IBM Cloud Pak for Integration` tile.
