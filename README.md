@@ -10,7 +10,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 ### OLM Catalog Sources
 1. From your web browser use the ![home.png](images/home.png) icon to open the OpenShift console.
 
-   <div class="text-purple">Warning</div> If you get a `PR_END_OF_FILE_ERROR` error in the browser it is most likely indicative of an OpenShift certificate expiration issue. To fix the problem follow the steps in **Appendix A** below, wait a few minute and then retry the above.
+   **Warning**: If you get a `PR_END_OF_FILE_ERROR` error in the browser it is most likely indicative of an OpenShift certificate expiration issue. To fix the problem follow the steps in **Appendix A** below, wait a few minute and then retry the above.
 
 2. The login credentials should already be saved in the browser. If not use `ibmadmin` as Username and `engageibm` as Password (make sure to select the `htpasswd` authentication method).
 
