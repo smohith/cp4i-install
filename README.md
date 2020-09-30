@@ -1,5 +1,5 @@
 # Installing Cloud Pak for Integration
-The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are installed and managed using the Operator Lifecycle Manager (OLM) within Red Hat OpenShift. To install CP4I, we will verify that the OLM Catalog Sources for IBM components have been added, we will then install the operators using OLM, create the CP4I custom resource, and finally deploy some of the capabilities and runtimes.
+The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are installed and managed using the Operator Lifecycle Manager (OLM) within Red Hat OpenShift. To install CP4I, you will verify that the OLM Catalog Sources for IBM components have been added, you will then install the operators using OLM, create the CP4I custom resources, and finally deploy some of the capabilities and runtimes.
 
 <ins>**Note**</ins>: The versions for your installed operators, capabilities, and runtimes may not match what is shown in the screenshots below. This is the result of this CI/CD world we live in that we just have to adapt to.    
 
