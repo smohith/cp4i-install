@@ -165,9 +165,9 @@ You will now use the PN to deploy further integration capabilities. Capabilities
 
       ![cp4i-pn-capability-create-od.png](images/cp4i-pn-capability-create-od.png)
       
-   3. From the list of options, select `example-operationsdashboard` and click `Next`.
+   3. From the list of options, select `Development` and click `Next`.
 
-      ![cp4i-pn-capability-create-od-ex.png](images/cp4i-pn-capability-create-od-ex.png)
+      ![cp4i-pn-capability-create-od-dev.png](images/cp4i-pn-capability-create-od-dev.png)
       
    4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
 
@@ -175,8 +175,10 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | :---                                      |                ---: |
       | Name                                      |                  od |
       | Namespace                                 |             tracing | 
-      | Config DB storage class name              | managed-nfs-storage |
-      | Store storage class name                  | managed-nfs-storage |
+      | License                                   |                  On |
+      | Configuration Database storage            | managed-nfs-storage |
+      | Shared storage                            | managed-nfs-storage |
+      | Tracing storage                           | managed-nfs-storage |
 
       ![cp4i-pn-capability-create-od-config.png](images/cp4i-pn-capability-create-od-config.png)
       
@@ -286,7 +288,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | Namespace                                 |                                         eventstreams | 
       | License accept                            |                                                   On |
       | Storage type                              |                                     persistent-claim |
-      | Storage size (optional)                   | 10Gi (Kafka and Zookeeper) and 2Gi (Schema Registry) |
+      | Storage size (optional)                   |                                                 10Gi |
       | Storage class (optional)                  |                                  managed-nfs-storage |
 
       ![cp4i-pn-runtime-create-es-config.png](images/cp4i-pn-runtime-create-es-config.png)
