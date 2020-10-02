@@ -315,7 +315,10 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | :---                                      |                ---: |
       | Name                                      |            apic-min |
       | Namespace                                 |                apic | 
-      | License acceptance                        |                  On |
+      | License acceptance (optional)             |                  On |
+      | License use (optional)                    |          production |
+
+      <ins>**Note**</ins>: The reason for selecting the `production` license use is because that's the only licensing option permitted for the gateway component in CP4I.
 
       ![cp4i-pn-capability-create-apic-config.png](images/cp4i-pn-capability-create-apic-config.png)
       
