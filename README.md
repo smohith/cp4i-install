@@ -149,7 +149,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | :---                                      |                ---: |
       | Namespace                                 |                 ace |
       | Accept Terms and Conditions               |                  On | 
-      | persistent-claim storage class (optional) | managed-nfs-storage |
+      | Storage class (optional)                  | managed-nfs-storage |
 
       ![cp4i-pn-capability-create-db-config.png](images/cp4i-pn-capability-create-db-config.png)
       
