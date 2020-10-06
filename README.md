@@ -35,7 +35,7 @@ You can use the quick approach and install all of the CP4I operators at once by 
 
    ![cs-operator-install.png](images/cs-operator-install.png)
 
-3. Accept all the defaults to install the operator at the cluster level and to approve automatic updates using the latest (stable) update channel. Click `Subscribe`.
+3. Accept all the defaults to install the operator at the cluster level. Click `Subscribe`.
 
    ![cs-operator-subscribe.png](images/cs-operator-subscribe.png)
 
@@ -50,8 +50,8 @@ You can use the quick approach and install all of the CP4I operators at once by 
    - IBM Cloud Pak for Integration Asset Repository
    - IBM App Connect
    - IBM MQ
-   - IBM Event Streams
    - IBM API Connect (this will also install the pre-req IBM DataPower Gateway operator) 
+   - IBM Event Streams
    - IBM Aspera HSTS
 
    <ins>**Warning**</ins>: If the `IBM Operator for Redis` operator remains indefinitely in an `Installing` state you can simply ignore the message. This will only affect the deployment of the `Aspera` capability. However, if you really want to fix the problem refer to `Appendix B`. 
