@@ -4,7 +4,7 @@ The IBM Cloud Pak for Integration (CP4I) is delivered as operators that are inst
 <ins>**Note**</ins>: The versions for your installed operators, capabilities, and runtimes may not match what is shown in the screenshots below. This is the result of this CI/CD world we live in that we just have to adapt to.    
 
 ### Environment
-- Bluedemos Template: https://bluedemos.com/show/3916
+- Template: https://ibm.biz/cp4i-env
 - Desktop Login: ibmuser/engageibm
 - OpenShift Console URL: https://console-openshift-console.apps.demo.ibmdte.net/
 - OpenShift Credentials: ibmadmin/engageibm [auth: htpasswd]
