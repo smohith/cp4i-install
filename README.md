@@ -121,7 +121,7 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       | :---                                      |                ---: |
       | Namespace                                 |                 ace |
       | Storage class (optional)                  | managed-nfs-storage |
-      | Size                                      |                  10 |
+      | Size                                      |                10Gi |
       | Enable Designer Mapping Assist (optional) |                  On |
       | Accept Terms and Conditions               |                  On | 
 
