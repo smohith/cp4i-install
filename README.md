@@ -97,6 +97,8 @@ We will deploy the Platform Navigator (PN) inside of a pre-configured namespace.
 8. Login to the Platform Navigator UI using `admin` as username and the password derived in Step 7 above. You are now ready to deploy some of the platform capabilities.
    
       ![cp4i-pn-ui.png](images/cp4i-pn-ui.png)
+      
+      <ins>**Important**</ins>: Before you proceed to the next section make sure all pods in the `ibm-common-services` namespace are up and running as some of the capabilities and runtimes you will deploy below will depend on those services being operational.
 
 ### Deploy Platform Capabilities and Runtimes
 You will now use the PN to deploy further integration capabilities. Capabilities provide tools for designing and managing integration instances like App Connect Dasboard, App Connect Designer, API Connect, Operations Dashboard or Asset Repository. Runtimes and instances are the runtime components of your integration solution like Aspera High speed transfer server, DataPower Gateway, Event Streams Kafka cluster or MQ Queue manager.
