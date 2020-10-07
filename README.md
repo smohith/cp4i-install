@@ -284,14 +284,14 @@ You will now use the PN to deploy further integration capabilities. Capabilities
       
    4. On the configuration page, use the values from the following table to populate the fields, keeping the default for the remaining ones and click `Create`.
 
-      | Field                                     |                                                Value |
-      | :---                                      |                                                 ---: |
-      | Name                                      |                                               es-dev |
-      | Namespace                                 |                                         eventstreams | 
-      | License accept                            |                                                   On |
-      | Storage type                              |                                     persistent-claim |
-      | Storage size (optional)                   |                                                 10Gi |
-      | Storage class (optional)                  |                                  managed-nfs-storage |
+      | Field                                     |                                                 Value |
+      | :---                                      |                                                  ---: |
+      | Name                                      |                                                es-dev |
+      | Namespace                                 |                                          eventstreams | 
+      | License accept                            |                                                    On |
+      | Storage type                              |                                      persistent-claim |
+      | Storage size (optional)                   | 10Gi (broker and zookeeper) and 2Gi (schema registry) |
+      | Storage class (optional)                  |                                   managed-nfs-storage |
 
       ![cp4i-pn-runtime-create-es-config.png](images/cp4i-pn-runtime-create-es-config.png)
       
